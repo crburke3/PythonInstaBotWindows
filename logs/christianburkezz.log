@@ -1,0 +1,507 @@
+ERROR:google.api_core.bidi:Thread-ConsumeBidirectionalStream caught unexpected exception True and will exit.
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\google\api_core\bidi.py", line 531, in _thread_main
+    self._on_response(response)
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\google\cloud\firestore_v1beta1\watch.py", line 441, in on_snapshot
+    meth(proto)
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\google\cloud\firestore_v1beta1\watch.py", line 376, in _on_snapshot_target_change_no_change
+    self.push(change.read_time, change.resume_token)
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\google\cloud\firestore_v1beta1\watch.py", line 550, in push
+    datetime.datetime.fromtimestamp(read_time.seconds, pytz.utc),
+  File "C:\Users\Administrator\PycharmProjects\InstaBot\Fire.py", line 22, in on_verifier_snapshot
+    if values[ManagementLocations.verifier_method != ""]:
+KeyError: True
+INFO:google.api_core.bidi:Thread-ConsumeBidirectionalStream exiting
+ERROR:google.api_core.bidi:Thread-ConsumeBidirectionalStream caught unexpected exception Message: no such element: Unable to locate element: {"method":"xpath","selector":".//*[contains(concat( " ", @class, " " ), concat( " ", "x8k0n wB5Mw", " " ))]"}
+  (Session info: chrome=73.0.3683.86)
+  (Driver info: chromedriver=73.0.3683.20 (8e2b610813e167eee3619ac4ce6e42e3ec622017),platform=Windows NT 10.0.14393 x86_64)
+ and will exit.
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\google\api_core\bidi.py", line 531, in _thread_main
+    self._on_response(response)
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\google\cloud\firestore_v1beta1\watch.py", line 441, in on_snapshot
+    meth(proto)
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\google\cloud\firestore_v1beta1\watch.py", line 376, in _on_snapshot_target_change_no_change
+    self.push(change.read_time, change.resume_token)
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\google\cloud\firestore_v1beta1\watch.py", line 550, in push
+    datetime.datetime.fromtimestamp(read_time.seconds, pytz.utc),
+  File "C:\Users\Administrator\PycharmProjects\InstaBot\Fire.py", line 24, in on_verifier_snapshot
+    self.bot.__verifier_click__(verifier_method)  # click the correct method
+  File "C:\Users\Administrator\PycharmProjects\InstaBot\InstaFunctions.py", line 145, in __verifier_click__
+    './/*[contains(concat( " ", @class, " " ), concat( " ", "x8k0n wB5Mw", " " ))]').click()
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\selenium\webdriver\remote\webelement.py", line 351, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\selenium\webdriver\remote\webelement.py", line 659, in find_element
+    {"using": by, "value": value})['value']
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\selenium\webdriver\remote\webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":".//*[contains(concat( " ", @class, " " ), concat( " ", "x8k0n wB5Mw", " " ))]"}
+  (Session info: chrome=73.0.3683.86)
+  (Driver info: chromedriver=73.0.3683.20 (8e2b610813e167eee3619ac4ce6e42e3ec622017),platform=Windows NT 10.0.14393 x86_64)
+
+INFO:google.api_core.bidi:Thread-ConsumeBidirectionalStream exiting
+ERROR:google.api_core.bidi:Thread-ConsumeBidirectionalStream caught unexpected exception 'list' object has no attribute 'click' and will exit.
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\google\api_core\bidi.py", line 531, in _thread_main
+    self._on_response(response)
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\google\cloud\firestore_v1beta1\watch.py", line 441, in on_snapshot
+    meth(proto)
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\google\cloud\firestore_v1beta1\watch.py", line 376, in _on_snapshot_target_change_no_change
+    self.push(change.read_time, change.resume_token)
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\google\cloud\firestore_v1beta1\watch.py", line 550, in push
+    datetime.datetime.fromtimestamp(read_time.seconds, pytz.utc),
+  File "C:\Users\Administrator\PycharmProjects\InstaBot\Fire.py", line 24, in on_verifier_snapshot
+    self.bot.__verifier_click__(verifier_method)  # click the correct method
+  File "C:\Users\Administrator\PycharmProjects\InstaBot\InstaFunctions.py", line 145, in __verifier_click__
+    './/*[contains(concat( " ", @class, " " ), concat( " ", "x8k0n wB5Mw", " " ))]').click()
+AttributeError: 'list' object has no attribute 'click'
+INFO:google.api_core.bidi:Thread-ConsumeBidirectionalStream exiting
+ERROR:google.api_core.bidi:Thread-ConsumeBidirectionalStream caught unexpected exception Message: unknown error: Element <button class="_5f5mN       jIbKX KUBKM       _3yx3p  " disabled="">...</button> is not clickable at point (180, 393). Other element would receive the click: <div class="W1Bne  zKxRE  "></div>
+  (Session info: chrome=73.0.3683.86)
+  (Driver info: chromedriver=73.0.3683.20 (8e2b610813e167eee3619ac4ce6e42e3ec622017),platform=Windows NT 10.0.14393 x86_64)
+ and will exit.
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\google\api_core\bidi.py", line 531, in _thread_main
+    self._on_response(response)
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\google\cloud\firestore_v1beta1\watch.py", line 441, in on_snapshot
+    meth(proto)
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\google\cloud\firestore_v1beta1\watch.py", line 376, in _on_snapshot_target_change_no_change
+    self.push(change.read_time, change.resume_token)
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\google\cloud\firestore_v1beta1\watch.py", line 550, in push
+    datetime.datetime.fromtimestamp(read_time.seconds, pytz.utc),
+  File "C:\Users\Administrator\PycharmProjects\InstaBot\Fire.py", line 24, in on_verifier_snapshot
+    self.bot.__verifier_click__(verifier_method)  # click the correct method
+  File "C:\Users\Administrator\PycharmProjects\InstaBot\InstaFunctions.py", line 152, in __verifier_click__
+    secuirty_btn.click()
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\selenium\webdriver\remote\webelement.py", line 80, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\selenium\webdriver\remote\webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: Element <button class="_5f5mN       jIbKX KUBKM       _3yx3p  " disabled="">...</button> is not clickable at point (180, 393). Other element would receive the click: <div class="W1Bne  zKxRE  "></div>
+  (Session info: chrome=73.0.3683.86)
+  (Driver info: chromedriver=73.0.3683.20 (8e2b610813e167eee3619ac4ce6e42e3ec622017),platform=Windows NT 10.0.14393 x86_64)
+
+INFO:google.api_core.bidi:Thread-ConsumeBidirectionalStream exiting
+ERROR:google.api_core.bidi:Thread-ConsumeBidirectionalStream caught unexpected exception Message: unknown error: Element <button class="_5f5mN       jIbKX KUBKM       _3yx3p  " disabled="">...</button> is not clickable at point (180, 393). Other element would receive the click: <div class="W1Bne  zKxRE  "></div>
+  (Session info: chrome=73.0.3683.86)
+  (Driver info: chromedriver=73.0.3683.20 (8e2b610813e167eee3619ac4ce6e42e3ec622017),platform=Windows NT 10.0.14393 x86_64)
+ and will exit.
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\google\api_core\bidi.py", line 531, in _thread_main
+    self._on_response(response)
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\google\cloud\firestore_v1beta1\watch.py", line 441, in on_snapshot
+    meth(proto)
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\google\cloud\firestore_v1beta1\watch.py", line 376, in _on_snapshot_target_change_no_change
+    self.push(change.read_time, change.resume_token)
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\google\cloud\firestore_v1beta1\watch.py", line 550, in push
+    datetime.datetime.fromtimestamp(read_time.seconds, pytz.utc),
+  File "C:\Users\Administrator\PycharmProjects\InstaBot\Fire.py", line 24, in on_verifier_snapshot
+    self.bot.__verifier_click__(verifier_method)  # click the correct method
+  File "C:\Users\Administrator\PycharmProjects\InstaBot\InstaFunctions.py", line 152, in __verifier_click__
+    secuirty_btn.click()
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\selenium\webdriver\remote\webelement.py", line 80, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\selenium\webdriver\remote\webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: Element <button class="_5f5mN       jIbKX KUBKM       _3yx3p  " disabled="">...</button> is not clickable at point (180, 393). Other element would receive the click: <div class="W1Bne  zKxRE  "></div>
+  (Session info: chrome=73.0.3683.86)
+  (Driver info: chromedriver=73.0.3683.20 (8e2b610813e167eee3619ac4ce6e42e3ec622017),platform=Windows NT 10.0.14393 x86_64)
+
+INFO:google.api_core.bidi:Thread-ConsumeBidirectionalStream exiting
+ERROR:google.api_core.bidi:Thread-ConsumeBidirectionalStream caught unexpected exception Message: unknown error: Element <button class="_5f5mN       jIbKX KUBKM       _3yx3p  " disabled="">...</button> is not clickable at point (180, 393). Other element would receive the click: <div class="W1Bne  zKxRE  "></div>
+  (Session info: chrome=73.0.3683.86)
+  (Driver info: chromedriver=73.0.3683.20 (8e2b610813e167eee3619ac4ce6e42e3ec622017),platform=Windows NT 10.0.14393 x86_64)
+ and will exit.
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\google\api_core\bidi.py", line 531, in _thread_main
+    self._on_response(response)
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\google\cloud\firestore_v1beta1\watch.py", line 441, in on_snapshot
+    meth(proto)
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\google\cloud\firestore_v1beta1\watch.py", line 376, in _on_snapshot_target_change_no_change
+    self.push(change.read_time, change.resume_token)
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\google\cloud\firestore_v1beta1\watch.py", line 550, in push
+    datetime.datetime.fromtimestamp(read_time.seconds, pytz.utc),
+  File "C:\Users\Administrator\PycharmProjects\InstaBot\Fire.py", line 24, in on_verifier_snapshot
+    self.bot.__verifier_click__(verifier_method)  # click the correct method
+  File "C:\Users\Administrator\PycharmProjects\InstaBot\InstaFunctions.py", line 152, in __verifier_click__
+    secuirty_btn.click()
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\selenium\webdriver\remote\webelement.py", line 80, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\selenium\webdriver\remote\webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: Element <button class="_5f5mN       jIbKX KUBKM       _3yx3p  " disabled="">...</button> is not clickable at point (180, 393). Other element would receive the click: <div class="W1Bne  zKxRE  "></div>
+  (Session info: chrome=73.0.3683.86)
+  (Driver info: chromedriver=73.0.3683.20 (8e2b610813e167eee3619ac4ce6e42e3ec622017),platform=Windows NT 10.0.14393 x86_64)
+
+INFO:google.api_core.bidi:Thread-ConsumeBidirectionalStream exiting
+ERROR:google.api_core.bidi:Thread-ConsumeBidirectionalStream caught unexpected exception Message: unknown error: Element <button class="_5f5mN       jIbKX KUBKM       _3yx3p  " disabled="">...</button> is not clickable at point (180, 393). Other element would receive the click: <div class="W1Bne  zKxRE  "></div>
+  (Session info: chrome=73.0.3683.86)
+  (Driver info: chromedriver=73.0.3683.20 (8e2b610813e167eee3619ac4ce6e42e3ec622017),platform=Windows NT 10.0.14393 x86_64)
+ and will exit.
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\google\api_core\bidi.py", line 531, in _thread_main
+    self._on_response(response)
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\google\cloud\firestore_v1beta1\watch.py", line 441, in on_snapshot
+    meth(proto)
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\google\cloud\firestore_v1beta1\watch.py", line 376, in _on_snapshot_target_change_no_change
+    self.push(change.read_time, change.resume_token)
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\google\cloud\firestore_v1beta1\watch.py", line 550, in push
+    datetime.datetime.fromtimestamp(read_time.seconds, pytz.utc),
+  File "C:\Users\Administrator\PycharmProjects\InstaBot\Fire.py", line 24, in on_verifier_snapshot
+    self.bot.__verifier_click__(verifier_method)  # click the correct method
+  File "C:\Users\Administrator\PycharmProjects\InstaBot\InstaFunctions.py", line 152, in __verifier_click__
+    secuirty_btn.click()
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\selenium\webdriver\remote\webelement.py", line 80, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\selenium\webdriver\remote\webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: Element <button class="_5f5mN       jIbKX KUBKM       _3yx3p  " disabled="">...</button> is not clickable at point (180, 393). Other element would receive the click: <div class="W1Bne  zKxRE  "></div>
+  (Session info: chrome=73.0.3683.86)
+  (Driver info: chromedriver=73.0.3683.20 (8e2b610813e167eee3619ac4ce6e42e3ec622017),platform=Windows NT 10.0.14393 x86_64)
+
+INFO:google.api_core.bidi:Thread-ConsumeBidirectionalStream exiting
+ERROR:google.api_core.bidi:Thread-ConsumeBidirectionalStream caught unexpected exception Message: unknown error: Element <button class="_5f5mN       jIbKX KUBKM       _3yx3p  " disabled="">...</button> is not clickable at point (180, 393). Other element would receive the click: <div class="W1Bne  zKxRE  "></div>
+  (Session info: chrome=73.0.3683.86)
+  (Driver info: chromedriver=73.0.3683.20 (8e2b610813e167eee3619ac4ce6e42e3ec622017),platform=Windows NT 10.0.14393 x86_64)
+ and will exit.
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\google\api_core\bidi.py", line 531, in _thread_main
+    self._on_response(response)
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\google\cloud\firestore_v1beta1\watch.py", line 441, in on_snapshot
+    meth(proto)
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\google\cloud\firestore_v1beta1\watch.py", line 376, in _on_snapshot_target_change_no_change
+    self.push(change.read_time, change.resume_token)
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\google\cloud\firestore_v1beta1\watch.py", line 550, in push
+    datetime.datetime.fromtimestamp(read_time.seconds, pytz.utc),
+  File "C:\Users\Administrator\PycharmProjects\InstaBot\Fire.py", line 24, in on_verifier_snapshot
+    self.bot.__verifier_click__(verifier_method)  # click the correct method
+  File "C:\Users\Administrator\PycharmProjects\InstaBot\InstaFunctions.py", line 152, in __verifier_click__
+    secuirty_btn.click()
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\selenium\webdriver\remote\webelement.py", line 80, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\selenium\webdriver\remote\webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: Element <button class="_5f5mN       jIbKX KUBKM       _3yx3p  " disabled="">...</button> is not clickable at point (180, 393). Other element would receive the click: <div class="W1Bne  zKxRE  "></div>
+  (Session info: chrome=73.0.3683.86)
+  (Driver info: chromedriver=73.0.3683.20 (8e2b610813e167eee3619ac4ce6e42e3ec622017),platform=Windows NT 10.0.14393 x86_64)
+
+INFO:google.api_core.bidi:Thread-ConsumeBidirectionalStream exiting
+ERROR:google.api_core.bidi:Thread-ConsumeBidirectionalStream caught unexpected exception Message: unknown error: Element <button class="_5f5mN       jIbKX KUBKM       _3yx3p  " disabled="">...</button> is not clickable at point (180, 393). Other element would receive the click: <div class="W1Bne  zKxRE  "></div>
+  (Session info: chrome=73.0.3683.86)
+  (Driver info: chromedriver=73.0.3683.20 (8e2b610813e167eee3619ac4ce6e42e3ec622017),platform=Windows NT 10.0.14393 x86_64)
+ and will exit.
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\google\api_core\bidi.py", line 531, in _thread_main
+    self._on_response(response)
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\google\cloud\firestore_v1beta1\watch.py", line 441, in on_snapshot
+    meth(proto)
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\google\cloud\firestore_v1beta1\watch.py", line 376, in _on_snapshot_target_change_no_change
+    self.push(change.read_time, change.resume_token)
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\google\cloud\firestore_v1beta1\watch.py", line 550, in push
+    datetime.datetime.fromtimestamp(read_time.seconds, pytz.utc),
+  File "C:\Users\Administrator\PycharmProjects\InstaBot\Fire.py", line 24, in on_verifier_snapshot
+    self.bot.__verifier_click__(verifier_method)  # click the correct method
+  File "C:\Users\Administrator\PycharmProjects\InstaBot\InstaFunctions.py", line 152, in __verifier_click__
+    secuirty_btn.click()
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\selenium\webdriver\remote\webelement.py", line 80, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\selenium\webdriver\remote\webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: Element <button class="_5f5mN       jIbKX KUBKM       _3yx3p  " disabled="">...</button> is not clickable at point (180, 393). Other element would receive the click: <div class="W1Bne  zKxRE  "></div>
+  (Session info: chrome=73.0.3683.86)
+  (Driver info: chromedriver=73.0.3683.20 (8e2b610813e167eee3619ac4ce6e42e3ec622017),platform=Windows NT 10.0.14393 x86_64)
+
+INFO:google.api_core.bidi:Thread-ConsumeBidirectionalStream exiting
+ERROR:google.api_core.bidi:Thread-ConsumeBidirectionalStream caught unexpected exception Message: unknown error: Element <button class="_5f5mN       jIbKX KUBKM       _3yx3p  " disabled="">...</button> is not clickable at point (180, 393). Other element would receive the click: <div class="W1Bne  zKxRE  "></div>
+  (Session info: chrome=73.0.3683.86)
+  (Driver info: chromedriver=73.0.3683.20 (8e2b610813e167eee3619ac4ce6e42e3ec622017),platform=Windows NT 10.0.14393 x86_64)
+ and will exit.
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\google\api_core\bidi.py", line 531, in _thread_main
+    self._on_response(response)
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\google\cloud\firestore_v1beta1\watch.py", line 441, in on_snapshot
+    meth(proto)
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\google\cloud\firestore_v1beta1\watch.py", line 376, in _on_snapshot_target_change_no_change
+    self.push(change.read_time, change.resume_token)
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\google\cloud\firestore_v1beta1\watch.py", line 550, in push
+    datetime.datetime.fromtimestamp(read_time.seconds, pytz.utc),
+  File "C:\Users\Administrator\PycharmProjects\InstaBot\Fire.py", line 23, in on_verifier_snapshot
+    self.bot.__verifier_click__(verifier_method)  # click the correct method
+  File "C:\Users\Administrator\PycharmProjects\InstaBot\InstaFunctions.py", line 152, in __verifier_click__
+    secuirty_btn.click()
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\selenium\webdriver\remote\webelement.py", line 80, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\selenium\webdriver\remote\webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: Element <button class="_5f5mN       jIbKX KUBKM       _3yx3p  " disabled="">...</button> is not clickable at point (180, 393). Other element would receive the click: <div class="W1Bne  zKxRE  "></div>
+  (Session info: chrome=73.0.3683.86)
+  (Driver info: chromedriver=73.0.3683.20 (8e2b610813e167eee3619ac4ce6e42e3ec622017),platform=Windows NT 10.0.14393 x86_64)
+
+INFO:google.api_core.bidi:Thread-ConsumeBidirectionalStream exiting
+ERROR:google.api_core.bidi:Thread-ConsumeBidirectionalStream caught unexpected exception Message: unknown error: Element <button class="_5f5mN       jIbKX KUBKM       _3yx3p  " disabled="">...</button> is not clickable at point (180, 393). Other element would receive the click: <div class="W1Bne  zKxRE  "></div>
+  (Session info: chrome=73.0.3683.86)
+  (Driver info: chromedriver=73.0.3683.20 (8e2b610813e167eee3619ac4ce6e42e3ec622017),platform=Windows NT 10.0.14393 x86_64)
+ and will exit.
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\google\api_core\bidi.py", line 531, in _thread_main
+    self._on_response(response)
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\google\cloud\firestore_v1beta1\watch.py", line 441, in on_snapshot
+    meth(proto)
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\google\cloud\firestore_v1beta1\watch.py", line 376, in _on_snapshot_target_change_no_change
+    self.push(change.read_time, change.resume_token)
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\google\cloud\firestore_v1beta1\watch.py", line 550, in push
+    datetime.datetime.fromtimestamp(read_time.seconds, pytz.utc),
+  File "C:\Users\Administrator\PycharmProjects\InstaBot\Fire.py", line 23, in on_verifier_snapshot
+    self.bot.__verifier_click__(verifier_method)  # click the correct method
+  File "C:\Users\Administrator\PycharmProjects\InstaBot\InstaFunctions.py", line 152, in __verifier_click__
+    secuirty_btn.click()
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\selenium\webdriver\remote\webelement.py", line 80, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\selenium\webdriver\remote\webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: Element <button class="_5f5mN       jIbKX KUBKM       _3yx3p  " disabled="">...</button> is not clickable at point (180, 393). Other element would receive the click: <div class="W1Bne  zKxRE  "></div>
+  (Session info: chrome=73.0.3683.86)
+  (Driver info: chromedriver=73.0.3683.20 (8e2b610813e167eee3619ac4ce6e42e3ec622017),platform=Windows NT 10.0.14393 x86_64)
+
+INFO:google.api_core.bidi:Thread-ConsumeBidirectionalStream exiting
+ERROR:google.api_core.bidi:Thread-ConsumeBidirectionalStream caught unexpected exception 'WebDriver' object has no attribute 'send_keys' and will exit.
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\google\api_core\bidi.py", line 531, in _thread_main
+    self._on_response(response)
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\google\cloud\firestore_v1beta1\watch.py", line 441, in on_snapshot
+    meth(proto)
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\google\cloud\firestore_v1beta1\watch.py", line 376, in _on_snapshot_target_change_no_change
+    self.push(change.read_time, change.resume_token)
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\google\cloud\firestore_v1beta1\watch.py", line 550, in push
+    datetime.datetime.fromtimestamp(read_time.seconds, pytz.utc),
+  File "C:\Users\Administrator\PycharmProjects\InstaBot\Fire.py", line 32, in on_verifier_snapshot
+    self.bot.chrome.send_keys(phone_value)
+AttributeError: 'WebDriver' object has no attribute 'send_keys'
+INFO:google.api_core.bidi:Thread-ConsumeBidirectionalStream exiting
+ERROR:google.api_core.bidi:Thread-ConsumeBidirectionalStream caught unexpected exception 'WebDriver' object has no attribute 'send_keys' and will exit.
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\google\api_core\bidi.py", line 531, in _thread_main
+    self._on_response(response)
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\google\cloud\firestore_v1beta1\watch.py", line 441, in on_snapshot
+    meth(proto)
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\google\cloud\firestore_v1beta1\watch.py", line 376, in _on_snapshot_target_change_no_change
+    self.push(change.read_time, change.resume_token)
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\google\cloud\firestore_v1beta1\watch.py", line 550, in push
+    datetime.datetime.fromtimestamp(read_time.seconds, pytz.utc),
+  File "C:\Users\Administrator\PycharmProjects\InstaBot\Fire.py", line 32, in on_verifier_snapshot
+    self.bot.chrome.send_keys(phone_value)
+AttributeError: 'WebDriver' object has no attribute 'send_keys'
+INFO:google.api_core.bidi:Thread-ConsumeBidirectionalStream exiting
+ERROR:google.api_core.bidi:Thread-ConsumeBidirectionalStream caught unexpected exception 'WebDriver' object has no attribute 'send_keys' and will exit.
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\google\api_core\bidi.py", line 531, in _thread_main
+    self._on_response(response)
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\google\cloud\firestore_v1beta1\watch.py", line 441, in on_snapshot
+    meth(proto)
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\google\cloud\firestore_v1beta1\watch.py", line 376, in _on_snapshot_target_change_no_change
+    self.push(change.read_time, change.resume_token)
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\google\cloud\firestore_v1beta1\watch.py", line 550, in push
+    datetime.datetime.fromtimestamp(read_time.seconds, pytz.utc),
+  File "C:\Users\Administrator\PycharmProjects\InstaBot\Fire.py", line 32, in on_verifier_snapshot
+    self.bot.chrome.send_keys(phone_value)
+AttributeError: 'WebDriver' object has no attribute 'send_keys'
+INFO:google.api_core.bidi:Thread-ConsumeBidirectionalStream exiting
+WARNING:urllib3.connectionpool:Connection pool is full, discarding connection: 127.0.0.1
+ERROR:google.api_core.bidi:Thread-ConsumeBidirectionalStream caught unexpected exception Message: unknown error: Element <button class="_5f5mN       jIbKX KUBKM       _3yx3p  " disabled="">...</button> is not clickable at point (180, 393). Other element would receive the click: <div class="W1Bne  zKxRE  "></div>
+  (Session info: chrome=73.0.3683.86)
+  (Driver info: chromedriver=73.0.3683.20 (8e2b610813e167eee3619ac4ce6e42e3ec622017),platform=Windows NT 10.0.14393 x86_64)
+ and will exit.
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\google\api_core\bidi.py", line 531, in _thread_main
+    self._on_response(response)
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\google\cloud\firestore_v1beta1\watch.py", line 441, in on_snapshot
+    meth(proto)
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\google\cloud\firestore_v1beta1\watch.py", line 376, in _on_snapshot_target_change_no_change
+    self.push(change.read_time, change.resume_token)
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\google\cloud\firestore_v1beta1\watch.py", line 550, in push
+    datetime.datetime.fromtimestamp(read_time.seconds, pytz.utc),
+  File "C:\Users\Administrator\PycharmProjects\InstaBot\Fire.py", line 23, in on_verifier_snapshot
+    self.bot.__verifier_click__(verifier_method)  # click the correct method
+  File "C:\Users\Administrator\PycharmProjects\InstaBot\InstaFunctions.py", line 151, in __verifier_click__
+    secuirty_btn.click()
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\selenium\webdriver\remote\webelement.py", line 80, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\selenium\webdriver\remote\webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: Element <button class="_5f5mN       jIbKX KUBKM       _3yx3p  " disabled="">...</button> is not clickable at point (180, 393). Other element would receive the click: <div class="W1Bne  zKxRE  "></div>
+  (Session info: chrome=73.0.3683.86)
+  (Driver info: chromedriver=73.0.3683.20 (8e2b610813e167eee3619ac4ce6e42e3ec622017),platform=Windows NT 10.0.14393 x86_64)
+
+INFO:google.api_core.bidi:Thread-ConsumeBidirectionalStream exiting
+ERROR:google.api_core.bidi:Thread-ConsumeBidirectionalStream caught unexpected exception 'WebDriver' object has no attribute 'send_keys' and will exit.
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\google\api_core\bidi.py", line 531, in _thread_main
+    self._on_response(response)
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\google\cloud\firestore_v1beta1\watch.py", line 441, in on_snapshot
+    meth(proto)
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\google\cloud\firestore_v1beta1\watch.py", line 376, in _on_snapshot_target_change_no_change
+    self.push(change.read_time, change.resume_token)
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\google\cloud\firestore_v1beta1\watch.py", line 550, in push
+    datetime.datetime.fromtimestamp(read_time.seconds, pytz.utc),
+  File "C:\Users\Administrator\PycharmProjects\InstaBot\Fire.py", line 35, in on_verifier_snapshot
+    self.bot.chrome.send_keys(phone_value)
+AttributeError: 'WebDriver' object has no attribute 'send_keys'
+INFO:google.api_core.bidi:Thread-ConsumeBidirectionalStream exiting
+ERROR:google.api_core.bidi:Thread-ConsumeBidirectionalStream caught unexpected exception Message: unknown error: Element <button class="_5f5mN       jIbKX KUBKM       _3yx3p  " disabled="">...</button> is not clickable at point (180, 393). Other element would receive the click: <div class="W1Bne  zKxRE  "></div>
+  (Session info: chrome=73.0.3683.86)
+  (Driver info: chromedriver=73.0.3683.20 (8e2b610813e167eee3619ac4ce6e42e3ec622017),platform=Windows NT 10.0.14393 x86_64)
+ and will exit.
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\google\api_core\bidi.py", line 531, in _thread_main
+    self._on_response(response)
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\google\cloud\firestore_v1beta1\watch.py", line 441, in on_snapshot
+    meth(proto)
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\google\cloud\firestore_v1beta1\watch.py", line 376, in _on_snapshot_target_change_no_change
+    self.push(change.read_time, change.resume_token)
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\google\cloud\firestore_v1beta1\watch.py", line 550, in push
+    datetime.datetime.fromtimestamp(read_time.seconds, pytz.utc),
+  File "C:\Users\Administrator\PycharmProjects\InstaBot\Fire.py", line 25, in on_verifier_snapshot
+    self.bot.__verifier_click__(verifier_method)  # click the correct method
+  File "C:\Users\Administrator\PycharmProjects\InstaBot\InstaFunctions.py", line 151, in __verifier_click__
+    secuirty_btn.click()
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\selenium\webdriver\remote\webelement.py", line 80, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\selenium\webdriver\remote\webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: Element <button class="_5f5mN       jIbKX KUBKM       _3yx3p  " disabled="">...</button> is not clickable at point (180, 393). Other element would receive the click: <div class="W1Bne  zKxRE  "></div>
+  (Session info: chrome=73.0.3683.86)
+  (Driver info: chromedriver=73.0.3683.20 (8e2b610813e167eee3619ac4ce6e42e3ec622017),platform=Windows NT 10.0.14393 x86_64)
+
+INFO:google.api_core.bidi:Thread-ConsumeBidirectionalStream exiting
+ERROR:google.api_core.bidi:Thread-ConsumeBidirectionalStream caught unexpected exception Message: unknown error: Element <button class="_5f5mN       jIbKX KUBKM       _3yx3p  " disabled="">...</button> is not clickable at point (180, 393). Other element would receive the click: <div class="W1Bne  zKxRE  "></div>
+  (Session info: chrome=73.0.3683.86)
+  (Driver info: chromedriver=73.0.3683.20 (8e2b610813e167eee3619ac4ce6e42e3ec622017),platform=Windows NT 10.0.14393 x86_64)
+ and will exit.
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\google\api_core\bidi.py", line 531, in _thread_main
+    self._on_response(response)
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\google\cloud\firestore_v1beta1\watch.py", line 441, in on_snapshot
+    meth(proto)
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\google\cloud\firestore_v1beta1\watch.py", line 376, in _on_snapshot_target_change_no_change
+    self.push(change.read_time, change.resume_token)
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\google\cloud\firestore_v1beta1\watch.py", line 550, in push
+    datetime.datetime.fromtimestamp(read_time.seconds, pytz.utc),
+  File "C:\Users\Administrator\PycharmProjects\InstaBot\Fire.py", line 25, in on_verifier_snapshot
+    self.bot.__verifier_click__(verifier_method)  # click the correct method
+  File "C:\Users\Administrator\PycharmProjects\InstaBot\InstaFunctions.py", line 151, in __verifier_click__
+    secuirty_btn.click()
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\selenium\webdriver\remote\webelement.py", line 80, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\selenium\webdriver\remote\webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: Element <button class="_5f5mN       jIbKX KUBKM       _3yx3p  " disabled="">...</button> is not clickable at point (180, 393). Other element would receive the click: <div class="W1Bne  zKxRE  "></div>
+  (Session info: chrome=73.0.3683.86)
+  (Driver info: chromedriver=73.0.3683.20 (8e2b610813e167eee3619ac4ce6e42e3ec622017),platform=Windows NT 10.0.14393 x86_64)
+
+INFO:google.api_core.bidi:Thread-ConsumeBidirectionalStream exiting
+ERROR:google.api_core.bidi:Thread-ConsumeBidirectionalStream caught unexpected exception 'WebDriver' object has no attribute 'send_keys' and will exit.
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\google\api_core\bidi.py", line 531, in _thread_main
+    self._on_response(response)
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\google\cloud\firestore_v1beta1\watch.py", line 441, in on_snapshot
+    meth(proto)
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\google\cloud\firestore_v1beta1\watch.py", line 376, in _on_snapshot_target_change_no_change
+    self.push(change.read_time, change.resume_token)
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\google\cloud\firestore_v1beta1\watch.py", line 550, in push
+    datetime.datetime.fromtimestamp(read_time.seconds, pytz.utc),
+  File "C:\Users\Administrator\PycharmProjects\InstaBot\Fire.py", line 36, in on_verifier_snapshot
+    self.bot.chrome.send_keys(phone_value)
+AttributeError: 'WebDriver' object has no attribute 'send_keys'
+INFO:google.api_core.bidi:Thread-ConsumeBidirectionalStream exiting
+ERROR:google.api_core.bidi:Thread-ConsumeBidirectionalStream caught unexpected exception 'WebDriver' object has no attribute 'send_keys' and will exit.
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\google\api_core\bidi.py", line 531, in _thread_main
+    self._on_response(response)
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\google\cloud\firestore_v1beta1\watch.py", line 441, in on_snapshot
+    meth(proto)
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\google\cloud\firestore_v1beta1\watch.py", line 376, in _on_snapshot_target_change_no_change
+    self.push(change.read_time, change.resume_token)
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\google\cloud\firestore_v1beta1\watch.py", line 550, in push
+    datetime.datetime.fromtimestamp(read_time.seconds, pytz.utc),
+  File "C:\Users\Administrator\PycharmProjects\InstaBot\Fire.py", line 36, in on_verifier_snapshot
+    self.bot.chrome.send_keys(phone_value)
+AttributeError: 'WebDriver' object has no attribute 'send_keys'
+INFO:google.api_core.bidi:Thread-ConsumeBidirectionalStream exiting
+ERROR:google.api_core.bidi:Thread-ConsumeBidirectionalStream caught unexpected exception Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=73.0.3683.86)
+  (Driver info: chromedriver=73.0.3683.20 (8e2b610813e167eee3619ac4ce6e42e3ec622017),platform=Windows NT 10.0.14393 x86_64)
+ and will exit.
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\google\api_core\bidi.py", line 531, in _thread_main
+    self._on_response(response)
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\google\cloud\firestore_v1beta1\watch.py", line 441, in on_snapshot
+    meth(proto)
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\google\cloud\firestore_v1beta1\watch.py", line 376, in _on_snapshot_target_change_no_change
+    self.push(change.read_time, change.resume_token)
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\google\cloud\firestore_v1beta1\watch.py", line 550, in push
+    datetime.datetime.fromtimestamp(read_time.seconds, pytz.utc),
+  File "C:\Users\Administrator\PycharmProjects\InstaBot\Fire.py", line 24, in on_verifier_snapshot
+    self.bot.__verifier_click__(verifier_method)  # click the correct method
+  File "C:\Users\Administrator\PycharmProjects\InstaBot\InstaFunctions.py", line 143, in __verifier_click__
+    if option in str(choice.text):
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\selenium\webdriver\remote\webelement.py", line 76, in text
+    return self._execute(Command.GET_ELEMENT_TEXT)['value']
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\selenium\webdriver\remote\webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=73.0.3683.86)
+  (Driver info: chromedriver=73.0.3683.20 (8e2b610813e167eee3619ac4ce6e42e3ec622017),platform=Windows NT 10.0.14393 x86_64)
+
+INFO:google.api_core.bidi:Thread-ConsumeBidirectionalStream exiting
