@@ -505,3 +505,33 @@ selenium.common.exceptions.StaleElementReferenceException: Message: stale elemen
   (Driver info: chromedriver=73.0.3683.20 (8e2b610813e167eee3619ac4ce6e42e3ec622017),platform=Windows NT 10.0.14393 x86_64)
 
 INFO:google.api_core.bidi:Thread-ConsumeBidirectionalStream exiting
+ERROR:google.api_core.bidi:Thread-ConsumeBidirectionalStream caught unexpected exception Message: no such element: Unable to locate element: {"method":"id","selector":"security_code"}
+  (Session info: chrome=73.0.3683.86)
+  (Driver info: chromedriver=73.0.3683.20 (8e2b610813e167eee3619ac4ce6e42e3ec622017),platform=Windows NT 10.0.14393 x86_64)
+ and will exit.
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\google\api_core\bidi.py", line 531, in _thread_main
+    self._on_response(response)
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\google\cloud\firestore_v1beta1\watch.py", line 441, in on_snapshot
+    meth(proto)
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\google\cloud\firestore_v1beta1\watch.py", line 376, in _on_snapshot_target_change_no_change
+    self.push(change.read_time, change.resume_token)
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\google\cloud\firestore_v1beta1\watch.py", line 550, in push
+    datetime.datetime.fromtimestamp(read_time.seconds, pytz.utc),
+  File "C:\Users\Administrator\PycharmProjects\InstaBot\Fire.py", line 34, in on_verifier_snapshot
+    self.bot.__verifier_code_enter__(phone_value)
+  File "C:\Users\Administrator\PycharmProjects\InstaBot\InstaFunctions.py", line 355, in __verifier_code_enter__
+    code_field = self.chrome.find_element_by_id("security_code")
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 360, in find_element_by_id
+    return self.find_element(by=By.ID, value=id_)
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\Administrator\PycharmProjects\vade\venv\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"id","selector":"security_code"}
+  (Session info: chrome=73.0.3683.86)
+  (Driver info: chromedriver=73.0.3683.20 (8e2b610813e167eee3619ac4ce6e42e3ec622017),platform=Windows NT 10.0.14393 x86_64)
+
+INFO:google.api_core.bidi:Thread-ConsumeBidirectionalStream exiting

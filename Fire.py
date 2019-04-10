@@ -2,8 +2,20 @@ from firebase_admin import firestore
 from firebase_admin import credentials
 import firebase_admin
 from enum import Enum
+import datetime
+import pytz
 from time import sleep
 
+
+def get_timestamp()->str:
+    date = datetime.datetime.now(pytz.timezone('America/New_York'))
+    stringed = date.strftime('%Hh%Mm%Ss')
+    return stringed
+
+def get_date()->str:
+    date = datetime.datetime.now(pytz.timezone('America/New_York'))
+    stringed = date.strftime('%m-%d-%Y')
+    return stringed
 
 class ManagementLocations(Enum):
     email = "email_verification"
@@ -80,3 +92,24 @@ class Fire:
     def get_management_values(self)->dict:
         values = self.db.collection(self.bot.username).document(u'management').get().to_dict()
         return values
+
+    def get_statistics(self)->dict:
+        values = self.db.collection(self.bot.username).document("statistics").get().to_dict()
+        return values
+
+
+    def set_statistics(self, follows: [str] = [], unfollows: [str] = []):
+        date = get_date()
+        post_dict = {date: {
+            "followed": follows,
+            "unfollowed": unfollows
+        }}
+        if not self.db.collection(self.bot.username).document("statistics").get().exists:
+            self.db.collection(self.bot.username).document("statistics").set(post_dict)
+        else:
+            current_list = self.get_statistics()
+            for user in follows:
+                if user not in current_list["followed"]:
+                    current_list["followed"].append(user)
+            self.db.collection(self.bot.username).document("statistics").update({date: current_list["followed"]})
+

@@ -6,6 +6,7 @@ import logging
 import os
 from Fire import ManagementLocations
 
+latency = 1
 
 class InstaBot:
     chrome: webdriver.Chrome
@@ -141,7 +142,10 @@ class InstaBot:
             self.chrome.execute_script("arguments[0].click();", like_btn[0])
             sleep(2)
             follow_count = 0
-            while True:
+            new_scroll = 0
+            old_scroll = 1
+            while new_scroll != old_scroll:
+                old_scroll = self.chrome.execute_script("return window.pageYOffset;")
                 user_list = self.chrome.find_elements_by_xpath(
                     '//*[contains(concat( " ", @class, " " ), concat( " ", "ZUqME", " " ))]')
                 for user in user_list:
@@ -165,7 +169,10 @@ class InstaBot:
                         print("Finished Process on post: " + post_link)
                         print("--- Followed: " + str(follow_count))
                         return ret_list
-                    check_list.append(username)
+                    if username != None:
+                        check_list.append(username)
+                    new_scroll = self.chrome.execute_script("return window.pageYOffset;")
+            return  ret_list
 
     def follow_user_from_list(self, user_element)->str:
         try:
@@ -188,6 +195,7 @@ class InstaBot:
                 follow_btn_2 = user_element.find_element_by_xpath('.//*[contains(concat( " ", @class, " " ), concat( " ", "L3NKy", " " ))]')
                 if ("Following" in follow_btn_2.text) | ("Requested" in follow_btn_2.text):
                     print("Followed: " + username)
+                    self.firebase.set_statistics(follows=[username])
                     return username
                 else:
                     print("FAIL: Insta follow block")
@@ -215,16 +223,16 @@ class InstaBot:
         return unfollow_list
 
     def __go_to_following__(self):
-        self.chrome.get("https://www.instagram.com/" + self.username)
-        sleep(2)
+        if self.username not in self.chrome.current_url:
+            self.chrome.get("https://www.instagram.com/" + self.username + "/following/")
+        sleep(2 + latency)
         header_btns = self.chrome.find_elements_by_class_name(" LH36I")
         header_btns[2].click()
-        sleep(2)
-        if "following" not in self.chrome.current_url:
-            self.chrome.refresh()
-            sleep(1)
+        self.chrome.execute_script("arguments[0].click();", header_btns[2])
+        sleep(2 + latency)
         user_list = self.chrome.find_elements_by_class_name("wo9IH")
         if len(user_list) == 0:
+            self.chrome.refresh()
             self.__go_to_following__()
 
     def __unfollow_user_from_list__(self, user_element)->str:

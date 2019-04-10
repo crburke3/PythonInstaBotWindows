@@ -23,17 +23,23 @@ def get_timestamp()->str:
     stringed = date.strftime('%Hh%Mm%Ss')
     return stringed
 
+todays_follow_count = 0
 
 while True:
     curr_time = datetime.datetime.now(pytz.timezone(time_zone))
     while (curr_time.hour >= working_hours[0]) & (curr_time.hour <= working_hours[1]):
         print("Starting: " + str(get_timestamp()))
         curr_time = datetime.datetime.now(pytz.timezone(time_zone))
+        insta.firebase.set_statistics(["FUCK"])
         queue = insta.firebase.get_post_queue()
         for post in queue:
-            followed = insta.follow_from_post(post_link=post, count=50)
-            print("-------------------- Followed :" + str(len(followed)))
-            insta.firebase.remove_from_queue(post)
+            try:
+                insta.firebase.remove_from_queue(post)
+                followed = insta.follow_from_post(post_link=post, count=50)
+                print("-------------------- Followed: " + str(len(followed)))
+                insta.firebase.set_statistics(follows=followed)
+            except Exception as e:
+                print(str(e))
         new_posts = insta.find_posts()
         insta.firebase.set_post_queue(new_posts)
         print("Fnding new posts at: " + str(get_timestamp()))
